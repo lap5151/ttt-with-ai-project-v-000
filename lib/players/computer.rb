@@ -56,6 +56,7 @@ class Computer < Player
     position = []
       if taken_result != []
         win.each do |x|
+          binding.pry
           compare = x & taken_result
             if compare.count >= 2
               answer =  x - taken_result

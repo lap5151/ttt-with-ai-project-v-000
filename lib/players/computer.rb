@@ -59,7 +59,11 @@ class Computer < Player
           compare = x & taken_result
             if compare.count >= 2
               answer =  x - taken_result
-              position = answer
+                if openings(board).include?(position[0])
+                  position << answer
+                else
+                  no << x 
+                end
             else
               no << x
             end

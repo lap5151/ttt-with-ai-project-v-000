@@ -54,7 +54,7 @@ class Computer < Player
     ]
     no = []
     position = []
-            binding.pry
+            #binding.pry
       if taken_result != []
         win.each do |x|
           compare = x & taken_result

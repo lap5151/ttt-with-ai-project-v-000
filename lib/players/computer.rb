@@ -62,7 +62,7 @@ class Computer < Player
                 if openings(board).include?(position[0])
                   position << answer
                 else
-                  no << x 
+                  no << x
                 end
             else
               no << x

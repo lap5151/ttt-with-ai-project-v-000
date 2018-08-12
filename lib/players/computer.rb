@@ -54,6 +54,7 @@ class Computer < Player
     ]
     no = []
     position = []
+    taken_result = taken(board)
             #binding.pry
       if taken_result != []
         win.each do |x|

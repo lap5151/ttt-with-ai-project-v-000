@@ -40,7 +40,7 @@ class Computer < Player
         sample - ohs - exes
       end
 
-  def test(taken_result)
+  def test(board)
     win= [
       [0,1,2], # Top row
       [3,4,5],  # Middle row
